@@ -19,11 +19,7 @@ public class MainBaiTap2 {
     ds.themNhanVien(NV4);
     ds.themNhanVien(NV5);
     
-        for(int i=0;i<5;i++)
-        {
-            System.out.println("\nNhan vien thu: "+i);
-            ds.NV[i].getThongTin();
-        }
+        ds.inDS();
   }
 
 }
