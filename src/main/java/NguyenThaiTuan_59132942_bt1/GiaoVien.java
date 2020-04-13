@@ -7,8 +7,11 @@ package NguyenThaiTuan_59132942_BTSoDo;
 
 
 public class GiaoVien extends CaNhan{
-    String monDay;
-    String toBoMon;
+        private String monDay;
+        private String toBoMon;
+
+    public GiaoVien() {
+    }
 
     public GiaoVien(String monDay, String toBoMon, String hoTen, int tuoi, String diaChi, String sdt) {
         super(hoTen, tuoi, diaChi, sdt);
@@ -31,14 +34,17 @@ public class GiaoVien extends CaNhan{
     public void setToBoMon(String toBoMon) {
         this.toBoMon = toBoMon;
     }
-  
+
     @Override
-    public void hienthiTT() {
-        System.out.println("Ho ten giao vien: "+hoTen);
-        System.out.println("Tuoi giao vien: "+tuoi);
-        System.out.println("Đia chi giao vien: "+diaChi);
-        System.out.println("So dien thoai giao vien: "+sdt);
-        System.out.println("Mon day: "+monDay);
-        System.out.println("To bo mon: "+toBoMon);
+    public String HienThiTT() {
+         System.out.println("Ho Ten giao vien: "+hoTen);
+        System.out.println("tuoi giao vien: "+tuoi);
+        System.out.println("dia chi giao vien: "+diaChi);
+        System.out.println("sdt giao vien: "+sdt);
+        System.out.println("mon day giao vien: "+monDay);
+        System.out.println("to bo mon giao vien: "+toBoMon);
+        return "2";
     }
+        
+        
 }

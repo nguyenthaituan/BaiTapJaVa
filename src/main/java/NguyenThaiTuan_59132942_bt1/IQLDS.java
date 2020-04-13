@@ -4,10 +4,10 @@
  * and open the template in the editor.
  */
 package NguyenThaiTuan_59132942_BTSoDo;
-
+import NguyenThaiTuan_59132942_BTSoDo.CaNhan;
 
 public interface IQLDS {
     public int them(CaNhan p);
-    public int xoa(String ten);
+    public int xoa (String ten);
     public void inDS();
-}
+   }

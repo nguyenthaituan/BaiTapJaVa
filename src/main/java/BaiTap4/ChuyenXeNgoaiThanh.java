@@ -29,9 +29,9 @@ public class ChuyenXeNgoaiThanh extends ChuyenXe{
     
     @Override
     public void hienThiTT(){
-        System.out.println("Thong tin Chuyen xe Ngoai Thanh: ");
+        System.out.println("\nThong tin Chuyen xe Ngoai Thanh: ");
         super.hienThiTT();
         
-        System.out.println("Noi den: "+ noiDen + "So ngay:  "+soNgay);
+        System.out.println("Noi den: "+ noiDen + " So ngay:  "+soNgay);
     }
 }

@@ -7,8 +7,11 @@ package NguyenThaiTuan_59132942_BTSoDo;
 
 
 public class HocSinh extends CaNhan{
-    String lop;
-    String nangKhieu;
+        private String lop;
+        private String nangKhieu;
+
+    public HocSinh() {
+    }
 
     public HocSinh(String lop, String nangKhieu, String hoTen, int tuoi, String diaChi, String sdt) {
         super(hoTen, tuoi, diaChi, sdt);
@@ -32,16 +35,15 @@ public class HocSinh extends CaNhan{
         this.nangKhieu = nangKhieu;
     }
     
-    
-   
     @Override
-    public void hienthiTT() {
-         System.out.println("Ho ten hoc sinh: " + hoTen);
-        System.out.println("Tuoi hoc sinh: " + tuoi);
-        System.out.println("Đia chi hoc sinh: " + diaChi);
-        System.out.println("So dien thoai hoc sinh: " + sdt);
-        System.out.println("Lop hoc sinh: " + lop);
-        System.out.println("Nang khieu hoc sinh: " + nangKhieu);
+    public String HienThiTT() {
+        System.out.println("\nHo Ten hoc sinh: "+hoTen);
+        System.out.println("tuoi hoc sinh: "+tuoi);
+        System.out.println("dia chi hoc sinh: "+diaChi);
+        System.out.println("sdt hoc sinh: "+sdt);
+        System.out.println("lop hoc sinh: "+lop);
+        System.out.println("Nang khieu hoc sinh: "+nangKhieu);
+        return "1";
     }
-    
+  
 }

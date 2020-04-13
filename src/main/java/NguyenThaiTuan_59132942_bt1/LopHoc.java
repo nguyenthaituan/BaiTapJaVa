@@ -4,26 +4,33 @@
  * and open the template in the editor.
  */
 package NguyenThaiTuan_59132942_BTSoDo;
-
-public class LopHoc {
-    QLDS qldsGVGD = new QLDS();
+import java.util.ArrayList;
+public class LopHoc{
+    GiaoVien giaovienCN =new GiaoVien();
+    QLDS qldsGVCN = new QLDS();
     QLDS qldsHS = new QLDS();
+    
+    ArrayList<GiaoVien> giaovienGD = new ArrayList<>();
+    ArrayList<HocSinh> hocSinh = new ArrayList<>();
 
     public LopHoc() {
     }
     
-    public int themHocSinh(HocSinh hs){
-        qldsHS.Them(hs);
+    public int themHS(HocSinh hs){
+        qldsHS.them(hs);
         return 1;
     }
     
     public int themGVGD(GiaoVien gv){
-        qldsGVGD.Them(gv);
+        qldsGVCN.them(gv);
         return 1;
     }
     
     public void inDSHS(){
-        qldsHS.InDS(qldsHS.dsCaNhan);
+        qldsHS.inDS();
     }
-    
+    public void inDSGVGD(){
+        qldsGVCN.inDS();
+    }
+   
 }

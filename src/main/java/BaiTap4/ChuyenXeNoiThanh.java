@@ -30,7 +30,7 @@ public class ChuyenXeNoiThanh extends ChuyenXe{
     
     @Override
     public void hienThiTT(){
-        System.out.println("Thong tin chuyen xe Noi Thanh: ");
+        System.out.println("\nThong tin chuyen xe Noi Thanh: ");
         super.hienThiTT();
         
         System.out.println("So Tuyen " +soTuyen + "; So km " + soKm);

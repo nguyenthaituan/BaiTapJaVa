@@ -5,11 +5,11 @@ package NguyenThaiTuan_59132942_BTSoDo;
  *
  * @author Admin
  */
-public abstract class CaNhan {
-    String hoTen;
-    int tuoi;
-    String diaChi;
-    String sdt;
+public abstract class CaNhan{
+    public String hoTen;
+    public int tuoi;
+    public String diaChi;
+    public String sdt;
 
     public CaNhan() {
     }
@@ -53,5 +53,6 @@ public abstract class CaNhan {
         this.sdt = sdt;
     }
     
-    public abstract void hienthiTT();
-}
+    public abstract String HienThiTT();
+
+} 
