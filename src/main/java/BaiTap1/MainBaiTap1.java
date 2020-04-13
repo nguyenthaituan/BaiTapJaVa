@@ -9,6 +9,6 @@ public class MainBaiTap1 {
         System.out.println(NV.getThongTin());  
         System.out.println(NV1.getThongTin()); 
         System.out.println(NV2.getThongTin()); 
-
+//m1
     }
 }
