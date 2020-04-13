@@ -59,15 +59,15 @@ public class NhanVien {
         this.tongSoGioLam = tongSoGioLam;
     }
     
-    public void getThongTin(){
-        System.out.println("Ten nhan vien: "+ten);
-        System.out.println("Tuoi nhan vien: "+tuoi);
-        System.out.println("Dia chi nhan vien: "+diaChi);
-        System.out.println("Tien luong nhan vien: "+tienLuong);
-        System.out.println("Tong so gio lam cua nhan vien: "+tongSoGioLam);
-        System.out.println("Tien thuong cua nhan vien: "+tinhThuong());  
+    public String getThongTin() {
+        return "NhanVien{" + "ten=" + ten + ", "
+        + "tuoi=" + tuoi + ", diaChi=" + diaChi + ", tienLuong="
+        + tienLuong + ", tongSoGioLam=" + tongSoGioLam + '}';
     }
     
+    
+  
+      
     public int tinhThuong(){
         if(tongSoGioLam<100)
             return 0;

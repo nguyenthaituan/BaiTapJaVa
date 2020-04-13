@@ -3,24 +3,12 @@ package BaiTap1;
 
 public class MainBaiTap1 {
     public static void main(String[] args) {
-        
-        //cach 1: khai bao khong co tham so truyen vao
-        NhanVien nhanvien1 = new NhanVien();
-        nhanvien1.ten = "Thai Tuan";
-        nhanvien1.diaChi = "Phu Yen";
-        nhanvien1.tuoi = 21;
-        nhanvien1.tienLuong = 5000000;
-        nhanvien1.tongSoGioLam = 100;
-        
-        //cach2: khai bao co tham so truyen vao
-        NhanVien nhanvien2 = new NhanVien("Thai Thinh",22,"Phu Yen",6000000,200);
-        
-        System.out.println("Thong tin nhan vien thu 1: ");
-        nhanvien1.getThongTin();
-        
-        System.out.println("");
-        
-        System.out.println("Thong tin nhan vien thu 2: ");
-        nhanvien2.getThongTin();
+        NhanVien NV = new NhanVien("tuan", 10,"phu yen", 100000, 100);
+        NhanVien NV1 = new NhanVien("teo", 15,"phu yen", 110000, 110);
+        NhanVien NV2 = new NhanVien("tun", 20,"phu yen", 120000, 120);
+        System.out.println(NV.getThongTin());  
+        System.out.println(NV1.getThongTin()); 
+        System.out.println(NV2.getThongTin()); 
+        //day la main bt1
     }
 }
